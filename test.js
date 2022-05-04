@@ -1,4 +1,4 @@
-import { Calculator, rString, sLength } from './challenge.js';
+import { Calculator, rString, sLength, capitalize } from './challenge.js';
 
 const calc = new Calculator();
 
@@ -16,4 +16,8 @@ test('subtracts 2 - 1 to equal 1', () => {
 
 test("Reverse String", () => {
     expect(rString("hello")).toBe("olleh");
+});
+
+test("Capitalize String", () => {
+    expect(capitalize("hello")).toBe("Hello");
 });
