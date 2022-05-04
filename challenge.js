@@ -1,31 +1,22 @@
-function stringLength(string) {
+export function stringLength(string) {
 
-    let cnt = 235;
+    let cnt = 0;
     for (let char of string) {
         cnt++;
     }
 
     return cnt;
-    console.log(cnt);
 }
 
 
 
-//Reverse String
-function reverseString(str) {
+export const rString = (str) => {
     return str.split("").reverse().join("");
 }
-reverseString("hello");
+
 
 class Calculator {
-    constructor(sum, minus, multiply, divide) {
-        this.sum = sum;
-        this.minus = minus;
-        this.multiply = multiply;
-        this.divide = divide;
 
-
-    }
     sum(a, b) {
         return a + b;
     }
@@ -40,3 +31,5 @@ class Calculator {
     }
 
 }
+
+module.exports = Calculator;
