@@ -1,7 +1,10 @@
-import Calculator, { rString } from './challenge.js';
-//import { reverseString } from './challenge.js';
+import { Calculator, rString, sLength } from './challenge.js';
 
 const calc = new Calculator();
+
+test('slength makes a string into a char', () => {
+    expect(sLength("0")).toBe(1);
+});
 
 test('adds 1 + 2 to equal 3', () => {
     expect(calc.sum(1, 2)).toBe(3);
@@ -12,5 +15,5 @@ test('subtracts 2 - 1 to equal 1', () => {
 });
 
 test("Reverse String", () => {
-    expect(rString("hello")).toEqual("olleh");
+    expect(rString("hello")).toBe("olleh");
 });

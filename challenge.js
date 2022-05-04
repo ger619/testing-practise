@@ -1,4 +1,4 @@
-export function stringLength(string) {
+export function sLength(string) {
 
     let cnt = 0;
     for (let char of string) {
@@ -15,7 +15,7 @@ export const rString = (str) => {
 }
 
 
-class Calculator {
+export class Calculator {
 
     sum(a, b) {
         return a + b;
@@ -31,5 +31,3 @@ class Calculator {
     }
 
 }
-
-module.exports = Calculator;
